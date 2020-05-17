@@ -1,0 +1,73 @@
+@charset "utf-8";
+@import '~@/resources/styles/mixins';
+
+.page {
+  background-color: #ffffff;
+  height: 100%;
+  padding: 76px 162px 47px 123px;
+  display: flex;
+  .img {
+    height: 343px;
+    width: 477px;
+    margin-top: 32px;
+    object-fit: contain;
+  }
+  .divider {
+    min-height: 472px;
+    width: 0.55px;
+    background-color: #e9e9e9;
+    margin: 0 52px 0 33px;
+  }
+  .formBox {
+    padding-top: 8px;
+    .title {
+      font-size: 22px;
+      margin-bottom: 40px;
+      width: 100%;
+      text-align: center;
+      font-weight: 600;
+    }
+    .loginBtn {
+      margin-top: 15px;
+    }
+  }
+}
+
+.singleInput {
+  width: 352px;
+  display: flex;
+  position: relative;
+  height: 50px;
+  align-items: center;
+  margin-bottom: 10px;
+  &::after {
+    position: absolute;
+    content: ' ';
+    bottom: 0;
+    height: 0.55px;
+    background-color: #e9e9e9;
+    width: 100%;
+  }
+  .inputLabel {
+    width: 95px;
+    min-width: 95px;
+  }
+  .input {
+    border: none;
+    flex: 1;
+    outline: none;
+    width: auto;
+    &::-webkit-input-placeholder {
+      color: #cccccc;
+    }
+    &:-moz-placeholder {
+      color: #cccccc;
+    }
+    &::-moz-placeholder {
+      color: #cccccc;
+    }
+    &:-ms-input-placeholder {
+      color: #cccccc;
+    }
+  }
+}

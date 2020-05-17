@@ -1,0 +1,57 @@
+@charset "utf-8";
+@import '~@/resources/styles/mixins';
+
+.commonPage {
+  min-height: 100vh;
+  .layout {
+    .header {
+      background-color: #ffffff;
+      position: sticky;
+      top: 0;
+      cursor: pointer;
+      // height: 48px;
+      .headerContent {
+        max-width: 1200px;
+        margin: 0 auto;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        .logo {
+          height: 28px;
+          width: 30px;
+          margin-right: 11px;
+        }
+        .title {
+          font-size: 16px;
+          line-height: 22px;
+        }
+        .menuBox {
+          flex: 1;
+          height: 100%;
+          margin-left: 100px;
+        }
+        .accountBox {
+          color: #666666;
+        }
+      }
+    }
+    .content {
+      max-width: 1200px;
+      min-width: 1200px;
+      margin: 0 auto;
+      min-height: 500px;
+      margin-top: 24px;
+      .contentTitle {
+        height: 24px;
+        font-size: 24px;
+        line-height: 24px;
+        margin-bottom: 24px;
+      }
+      .contentPage {
+        height: 100%;
+        min-height: 500px;
+        width: 100%;
+      }
+    }
+  }
+}
